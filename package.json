@@ -1,0 +1,10 @@
+{
+  "name": "whatsapp-scheduler-root",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "git diff --quiet || (git add . && git commit -m 'Auto-update: '$(date +%Y-%m-%d) && git push origin main)",
+    "quick-deploy": "git add . && git commit --allow-empty-message -m '' && git push origin main",
+    "watch": "nodemon --watch . --ignore 'node_modules' --exec 'npm run deploy'"
+  },
+  "dependencies": {}
+}
