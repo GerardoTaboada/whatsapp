@@ -1,0 +1,136 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-header h1 {
+  color: var(--whatsapp-teal);
+  margin: 0;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.whatsapp-connection, .message-scheduler, .scheduled-messages {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.whatsapp-connection {
+  grid-column: 1;
+}
+
+.message-scheduler {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.scheduled-messages {
+  grid-column: 1 / -1;
+}
+
+.connect-button, .schedule-button {
+  background-color: var(--whatsapp-green);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.connect-button:hover, .schedule-button:hover {
+  background-color: var(--whatsapp-dark-green);
+}
+
+.qr-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.connection-status {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.connection-status.connected {
+  background-color: var(--whatsapp-green);
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.scheduled-messages ul {
+  list-style: none;
+  padding: 0;
+}
+
+.scheduled-messages li {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.message-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.message-content {
+  white-space: pre-wrap;
+}
