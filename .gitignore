@@ -1,0 +1,29 @@
+# Environment files
+.env
+*.env
+
+# Node modules
+node_modules/
+
+# Dependency directories
+/client/node_modules
+/server/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Build directories
+/client/build
+
+# Database files
+*.sqlite
+*.sqlite3
+
+# Session files
+whatsapp_sessions/
